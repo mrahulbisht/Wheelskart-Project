@@ -1,0 +1,7 @@
+package com.niit.wheelskart;
+
+import junit.framework.TestCase;
+
+public class UserDAOTestCase extends TestCase {
+
+}
