@@ -11,6 +11,9 @@
 <title>Login Page</title>
 </head>
 <body>
+
+<h2>Welcome To Register</h2>
+<%@include file="CommonHeader.jsp" %>
 <div class="container-fluid">
     <section class="container">
 		<div class="container-page">				

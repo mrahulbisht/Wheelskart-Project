@@ -12,19 +12,21 @@
 <body>
 
 <center>
-		<h2>Welcome to Shopping Cart</h2>
+		<h2>Welcome to Wheelskart</h2>
 </center>
+<a href="LoginPage">    <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-user">Login</span></button></a>
 
+	
+	<tex-align=left><a href="RegistrationPage"> <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-user">Register</span></button></a>
+	
+	<br>
 
 <%@include file="WEB-INF/views/CommonHeader.jsp" %>
 	
 	<hr color="blue">
 
 
-	<a href="LoginPage"> Login</a>
-
-	<a href="RegistrationPage"> Register</a>
-	<br>
+	
 	<c:if test="${isUserClickedLogin=='true'}">
 
 		<jsp:include page="WEB-INF/views/Login.jsp"></jsp:include>
@@ -35,5 +37,8 @@
 	<c:if test="${isUserClickedRegister=='true' }">
 		<jsp:include page="WEB-INF/views/Registration.jsp"></jsp:include>
 	</c:if>
+	
+	<%@include file="WEB-INF/views/Courosel.jsp" %>
+	
 </body>
 </html>

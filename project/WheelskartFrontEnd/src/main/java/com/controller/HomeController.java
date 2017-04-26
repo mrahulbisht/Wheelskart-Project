@@ -3,6 +3,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.SocketUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
@@ -13,18 +14,27 @@ public class HomeController {
 		System.out.println("in home controller");
 		
 	}
-	@RequestMapping("/")
+	/*@RequestMapping("/")
 	public  String goToHome(Model model)
-	
-	{
+		{
 		System.out.println("In goToHOme method");
 		model.addAttribute("message", "Thank you for visiting Shopping Cart");
 		return "Home";
 		
-	}
+	}      */
 	
 	
-	@RequestMapping("/LoginPage")
+	@RequestMapping("/")
+	public  ModelAndView goToHome()
+		{
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("message", "Thank you for visiting Shopping Cart");
+		//return "Home";
+		return mv;
+	}   
+	
+	
+	@RequestMapping("LoginPage")
 	public String loginPage(Model model)
 	{
 		model.addAttribute("isUserClickedLogin", "true");

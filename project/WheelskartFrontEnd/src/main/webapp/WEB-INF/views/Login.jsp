@@ -11,9 +11,11 @@
 <title>Login Page</title>
 </head>
 <body>
+
 <div class="container">
   <h2>Wheelskart Login</h2>
-  <form>
+  <%@include file="CommonHeader.jsp" %>
+  <form action="validate">
     <div class="form-group">
       <label for="email"><span class="glyphicon glyphicon-envelope">Email:</label>
       <input type="email" class="form-control" id="email" placeholder="Enter email">

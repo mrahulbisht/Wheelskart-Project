@@ -1,3 +1,4 @@
 #Tomcat publish data
-#Thu Apr 20 17:00:00 IST 2017
+#Wed Apr 26 14:32:42 IST 2017
+org.eclipse.jst.j2ee.server\:Wheelskart=WEB-INF/lib/Wheelskart-0.0.1-SNAPSHOT.jar
 org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\Dell\\.m2\\repository\\org\\springframework\\spring-web\\4.3.7.RELEASE\\spring-web-4.3.7.RELEASE.jar=WEB-INF/lib/spring-web-4.3.7.RELEASE.jar
